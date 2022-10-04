@@ -140,6 +140,21 @@ select {
   }
 }
 
+/* ------------------ START COMPONENT CLASSES----------------------- */
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  flex: 1;
+  max-width: 540px;
+  margin: 1rem;
+}
+/* ------------------ END COMPONENT CLASSES----------------------- */
+
 /* ------------------ START UTILITY CLASSES----------------------- */
 .bg-main {
   background-color: var(--main-bg);
