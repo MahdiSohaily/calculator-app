@@ -11,6 +11,9 @@
   --num-color: hsl(221, 14%, 31%);
   --operation-color: hsl(0, 0, 100%);
   --operation-color-2: hsl(0, 0, 100%);
+
+  --number-fs: 2rem;
+  --main-fw: 700;
 }
 
 [data-color-scheme='dark'] {
@@ -57,7 +60,6 @@
   --operation-color: hsl(0, 0, 100%);
   --operation-color-2: hsl(198, 20%, 13%);
 }
-
 
 /* Box sizing rules */
 *,
