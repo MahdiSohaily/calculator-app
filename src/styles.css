@@ -14,6 +14,17 @@
 
   --number-fs: 2rem;
   --main-fw: 700;
+
+  --size-100: 0.25em;
+  --size-200: 0.5em;
+  --size-300: 0.75em;
+  --size-400: 1em;
+  --size-500: 1.25em;
+  --size-600: 1.5em;
+  --size-700: 1.75em;
+  --size-800: 2em;
+  --size-900: 2.5em;
+  --size-xl: 4em;
 }
 
 [data-color-scheme='dark'] {
