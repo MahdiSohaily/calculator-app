@@ -128,3 +128,41 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* ------------------ START UTILITY CLASSES----------------------- */
+.bg-main {
+  background-color: var(--main-bg);
+}
+
+.bg-toggle {
+  background-color: var(--toggle-bg);
+}
+
+.bg-screen {
+  background-color: var(--screen-bg);
+}
+
+.reset-key-bg {
+  background-color: var(--reset-key-bg);
+}
+
+.bg-equal-key {
+  background-color: var(--bg-equal-key);
+}
+
+.bg-num-key {
+  background-color: var(--bg-num-key);
+}
+
+.num-text {
+  color: var(--num-color);
+}
+
+.text-operation {
+  color: var(--operation-color);
+}
+
+.text-operation-2 {
+  color: var(--operation-color-2);
+}
+/* ------------------ END UTILITY CLASSES----------------------- */
