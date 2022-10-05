@@ -153,6 +153,10 @@ main {
   margin: 1rem;
 }
 
+.result {
+  font-size: 40px;
+}
+
 .numbers-container {
   display: grid;
   grid-auto-columns: 1fr;
@@ -268,10 +272,12 @@ main {
 
 .reset-key-bg {
   background-color: var(--reset-key-bg);
+  box-shadow: 0 4px 0 -1px var(--reset-key-shadow);
 }
 
 .bg-equal-key {
   background-color: var(--bg-equal-key);
+  box-shadow: 0 4px 0 -1px var(--bg-equal-key-shadow);
 }
 
 .bg-num-key {
