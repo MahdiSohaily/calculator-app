@@ -149,23 +149,23 @@ main {
 }
 
 .calc {
-  flex: 1;
-  max-width: 540px;
+  width: 540px;
   margin: 1rem;
 }
 
 .numbers-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: 1fr;
+  gap: var(--size-600);
   grid-template-areas:
-    'seven   eight     nine      del'
-    'four    five      six       plus'
-    'one     two       three     subtract'
-    'dot     zero      divide    multiple'
-    'reset             equal';
+    'seven eight nine del'
+    'four five six plus'
+    'one two three subtract'
+    'dot zero divide multiple'
+    'reset reset equal equal';
 }
 
-/* .seven {
+.seven {
   grid-area: seven;
 }
 
@@ -235,11 +235,17 @@ main {
 
 .equal {
   grid-area: equal;
-} */
+}
+
 .key {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6px;
+}
+
+.key:hover {
+  cursor: pointer;
 }
 
 .key-text {
@@ -270,6 +276,7 @@ main {
 
 .bg-num-key {
   background-color: var(--bg-num-key);
+  box-shadow: 0 4px 0 -1px var(--bg-num-key-shadow);
 }
 
 .num-text {
