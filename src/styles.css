@@ -312,4 +312,8 @@ main {
 .rounded {
   border-radius: 0.5em;
 }
+
+.no-shadow {
+  box-shadow: none;
+}
 /* ------------------ END UTILITY CLASSES----------------------- */
