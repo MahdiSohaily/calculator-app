@@ -27,6 +27,7 @@
   --size-xl: 4em;
 }
 
+/* Dark theme colors */
 [data-color-scheme='dark'] {
   --main-bg: hsl(222, 26%, 31%);
   --toggle-bg: hsl(223, 31%, 20%);
@@ -42,6 +43,7 @@
   --op-key-2: hsl(0, 0%, 100%);
 }
 
+/* Light theme colors */
 [data-color-scheme='light'] {
   --main-bg: hsl(0, 0%, 90%);
   --toggle-bg: hsl(0, 5%, 81%);
@@ -57,6 +59,7 @@
   --op-key-2: hsl(0, 0%, 100%);
 }
 
+/* Purple theme colors */
 [data-color-scheme='purple'] {
   --main-bg: hsl(268, 75%, 9%);
   --toggle-bg: hsl(268, 71%, 12%);
