@@ -153,6 +153,98 @@ main {
   max-width: 540px;
   margin: 1rem;
 }
+
+.numbers-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'seven   eight     nine      del'
+    'four    five      six       plus'
+    'one     two       three     subtract'
+    'dot     zero      divide    multiple'
+    'reset             equal';
+}
+
+/* .seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.del {
+  grid-area: del;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.subtract {
+  grid-area: subtract;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.multiple {
+  grid-area: multiple;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+.equal {
+  grid-area: equal;
+} */
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key-text {
+  font-size: var(--number-fs);
+}
 /* ------------------ END COMPONENT CLASSES----------------------- */
 
 /* ------------------ START UTILITY CLASSES----------------------- */
@@ -192,11 +284,19 @@ main {
   color: var(--op-key-2);
 }
 
+.p-8 {
+  padding: var(--size-800);
+}
+
 .mt-8 {
   margin-top: var(--size-800);
 }
 
 .mt-6 {
   margin-top: var(--size-600);
+}
+
+.rounded {
+  border-radius: 0.5em;
 }
 /* ------------------ END UTILITY CLASSES----------------------- */
