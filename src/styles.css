@@ -157,6 +157,7 @@ main {
   margin: 1rem;
 }
 
+/* Header section styles */
 .calc-header,
 .theme-container {
   display: flex;
@@ -191,11 +192,13 @@ main {
   align-items: center;
 }
 
+/* Screen section styles */
 .result {
   font-size: 40px;
   text-align: right;
 }
 
+/* Keys section styles */
 .numbers-container {
   display: grid;
   grid-auto-columns: 1fr;
