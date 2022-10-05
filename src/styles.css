@@ -9,8 +9,8 @@
   --bg-num-key: hsl(30, 25%, 89%);
   --bg-num-key-shadow: hsl(28, 16%, 65%);
   --num-color: hsl(221, 14%, 31%);
-  --operation-color: hsl(0, 0, 100%);
-  --operation-color-2: hsl(0, 0, 100%);
+  --op-key: hsl(0, 0%, 100%);
+  --op-key-2: hsl(0, 0%, 100%);
 
   --number-fs: 2rem;
   --main-fw: 700;
@@ -38,8 +38,8 @@
   --bg-num-key: hsl(30, 25%, 89%);
   --bg-num-key-shadow: hsl(28, 16%, 65%);
   --num-color: hsl(221, 14%, 31%);
-  --operation-color: hsl(0, 0, 100%);
-  --operation-color-2: hsl(0, 0, 100%);
+  --op-key: hsl(0, 0%, 100%);
+  --op-key-2: hsl(0, 0%, 100%);
 }
 
 [data-color-scheme='light'] {
@@ -53,8 +53,8 @@
   --bg-num-key: hsl(45, 7%, 89%);
   --bg-num-key-shadow: hsl(35, 11%, 61%);
   --num-color: hsl(60, 10%, 19%);
-  --operation-color: hsl(0, 0, 100%);
-  --operation-color-2: hsl(0, 0, 100%);
+  --op-key: hsl(0, 0%, 100%);
+  --op-key-2: hsl(0, 0%, 100%);
 }
 
 [data-color-scheme='purple'] {
@@ -68,8 +68,8 @@
   --bg-num-key: hsl(268, 47%, 21%);
   --bg-num-key-shadow: hsl(290, 70%, 36%);
   --num-color: hsl(52, 100%, 62%);
-  --operation-color: hsl(0, 0, 100%);
-  --operation-color-2: hsl(198, 20%, 13%);
+  --op-key: hsl(0, 0%, 100%);
+  --op-key-2: hsl(198, 20%, 13%);
 }
 
 /* Box sizing rules */
@@ -185,11 +185,18 @@ main {
 }
 
 .text-operation {
-  color: var(--operation-color);
+  color: var(--op-key);
 }
 
 .text-operation-2 {
-  color: var(--operation-color-2);
+  color: var(--op-key-2);
 }
 
+.mt-8 {
+  margin-top: var(--size-800);
+}
+
+.mt-6 {
+  margin-top: var(--size-600);
+}
 /* ------------------ END UTILITY CLASSES----------------------- */
