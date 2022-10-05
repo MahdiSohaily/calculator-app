@@ -180,7 +180,7 @@ main {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-} 
+}
 
 .theme-state {
   display: flex;
@@ -190,18 +190,33 @@ main {
 
 .result {
   font-size: 40px;
+  text-align: right;
 }
 
 .numbers-container {
   display: grid;
   grid-auto-columns: 1fr;
-  gap: var(--size-600);
+  gap: var(--size-400);
   grid-template-areas:
     'seven eight nine del'
     'four five six plus'
     'one two three subtract'
     'dot zero divide multiple'
     'reset reset equal equal';
+}
+
+@media screen and (min-width: 40em) {
+  .numbers-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: var(--size-600);
+    grid-template-areas:
+      'seven eight nine del'
+      'four five six plus'
+      'one two three subtract'
+      'dot zero divide multiple'
+      'reset reset equal equal';
+  }
 }
 
 .seven {
@@ -288,7 +303,17 @@ main {
 }
 
 .key-text {
-  font-size: var(--number-fs);
+  font-size: 1.5rem
+}
+
+@media screen and (min-width: 40em) {
+  .key {
+    padding: 3px;
+  }
+
+  .key-text {
+    font-size: var(--number-fs);
+  }
 }
 /* ------------------ END COMPONENT CLASSES----------------------- */
 
@@ -336,7 +361,13 @@ main {
   padding: var(--size-100);
 }
 .p-8 {
-  padding: var(--size-800);
+  padding: var(--size-600);
+}
+
+@media screen and (min-width: 40em) {
+  .p-8 {
+    padding: var(--size-800);
+  }
 }
 
 .mt-7 {
