@@ -168,6 +168,26 @@ main {
   letter-spacing: 1.5px;
 }
 
+.track-container {
+  width: 70px;
+}
+
+.track-rail {
+  border-radius: 100vmax;
+}
+
+.track {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+} 
+
+.theme-state {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .result {
   font-size: 40px;
 }
@@ -312,8 +332,15 @@ main {
   color: var(--op-key-2);
 }
 
+.p-1 {
+  padding: var(--size-100);
+}
 .p-8 {
   padding: var(--size-800);
+}
+
+.mt-7 {
+  margin-top: var(--size-700);
 }
 
 .mt-8 {
