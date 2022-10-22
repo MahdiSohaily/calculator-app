@@ -1,1 +1,2 @@
-const obj: { name: string; age: number } = { name: 'mahdi', age: 25 };
+const obj = { name: 'mahdi', age: 25 };
+obj.name = 'Jafar';
