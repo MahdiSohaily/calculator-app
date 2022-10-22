@@ -1,1 +1,1 @@
-var graph = [55.2, 41.3];
+var obj = { name: 'mahdi', age: 25 };
