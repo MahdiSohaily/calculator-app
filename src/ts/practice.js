@@ -59,3 +59,10 @@ function divide(_a) {
     return dividend / divisor;
 }
 divide({ dividend: 10, divisor: 2 });
+function sumup(salary) {
+    var salaries = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        salaries[_i - 1] = arguments[_i];
+    }
+    return Math.max.apply(Math, salaries);
+}

@@ -97,3 +97,8 @@ function divide({ dividend, divisor }: { dividend: number; divisor: number }) {
 }
 
 divide({ dividend: 10, divisor: 2 });
+
+
+function sumup (salary: number, ...salaries: number[]){
+  return Math.max(...salaries)
+}
