@@ -37,3 +37,4 @@ var colored = {
     width: 10,
     color: 'yellow'
 };
+// Functions

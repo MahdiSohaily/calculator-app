@@ -73,3 +73,6 @@ const colored : coloredRectangle = {
   width: 10,
   color: 'yellow'
 }
+
+
+// Functions
