@@ -28,3 +28,4 @@ var student = {
     name: 'Mahdi',
     age: 25
 };
+// Interfaces

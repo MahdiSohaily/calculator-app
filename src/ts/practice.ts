@@ -45,3 +45,5 @@ const student: person = {
   name: 'Mahdi',
   age: 25
 }
+
+// Interfaces
