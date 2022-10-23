@@ -60,7 +60,7 @@ interface Rectangle {
 }
 
 interface coloredRectangle extends Rectangle {
-  color : string,
+  color: string;
 }
 
 const rectangle: Rectangle = {
@@ -68,12 +68,11 @@ const rectangle: Rectangle = {
   width: 10,
 };
 
-const colored : coloredRectangle = {
+const colored: coloredRectangle = {
   height: 20,
   width: 10,
-  color: 'yellow'
-}
-
+  color: 'yellow',
+};
 
 // Functions
 /**
@@ -82,6 +81,8 @@ const colored : coloredRectangle = {
  */
 
 let greeting: Function;
-greeting = () => {
+greeting = () => {};
 
+function pow(a: number, b: number): number {
+  return a ** b;
 }

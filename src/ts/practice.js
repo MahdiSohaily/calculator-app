@@ -43,5 +43,7 @@ var colored = {
  * type like so
  */
 var greeting;
-greeting = function () {
-};
+greeting = function () { };
+function pow(a, b) {
+    return Math.pow(a, b);
+}
