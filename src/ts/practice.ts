@@ -47,3 +47,9 @@ const student: person = {
 }
 
 // Interfaces
+/**
+ * Interfaces are the same as type aliases except that they only can be used with the
+ * type objects.
+ * Interfaces allow us to define a specific type of format for classes that extend them
+ * or a specific type for objects of the same type
+ */
