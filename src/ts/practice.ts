@@ -102,6 +102,8 @@ function sumup(salary: number, ...salaries: number[]) {
   return Math.max(...salaries);
 }
 
+// Functions type
+
 type pow = (a: number, b: number) => number;
 
 const operate: pow = (a: number, b: number) => a ** b;
