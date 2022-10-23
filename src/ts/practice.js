@@ -38,3 +38,10 @@ var colored = {
     color: 'yellow'
 };
 // Functions
+/**
+ * In type script we can define the functions return type and parameters
+ * type like so
+ */
+var greeting;
+greeting = function () {
+};

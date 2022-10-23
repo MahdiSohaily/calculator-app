@@ -76,3 +76,12 @@ const colored : coloredRectangle = {
 
 
 // Functions
+/**
+ * In type script we can define the functions return type and parameters
+ * type like so
+ */
+
+let greeting: Function;
+greeting = () => {
+
+}
