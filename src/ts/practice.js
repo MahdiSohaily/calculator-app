@@ -22,3 +22,5 @@ var Directions;
     Directions["East"] = "east";
     Directions["West"] = "west";
 })(Directions || (Directions = {}));
+var UID = 'D125';
+var UID2 = 125;

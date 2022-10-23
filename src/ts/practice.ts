@@ -23,8 +23,14 @@ obj.name = 'Jafar';
 // TYPESCRIPT ENUM'S
 
 enum Directions {
-    North = 'north',
-    South = 'south',
-    East = 'east',
-    West = 'west'
+  North = 'north',
+  South = 'south',
+  East = 'east',
+  West = 'west',
 }
+
+// Type Aliases
+type stringOrNum = string | number;
+
+const UID: stringOrNum = 'D125';
+const UID2: stringOrNum = 125;
