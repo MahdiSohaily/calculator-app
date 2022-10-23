@@ -31,6 +31,17 @@ enum Directions {
 
 // Type Aliases
 type stringOrNum = string | number;
+type personName = string;
+type personAge = number;
+type person = {
+  name: personName;
+  age: personAge;
+};
 
 const UID: stringOrNum = 'D125';
 const UID2: stringOrNum = 125;
+
+const student: person = {
+  name: 'Mahdi',
+  age: 25
+}

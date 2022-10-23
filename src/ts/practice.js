@@ -24,3 +24,7 @@ var Directions;
 })(Directions || (Directions = {}));
 var UID = 'D125';
 var UID2 = 125;
+var student = {
+    name: 'Mahdi',
+    age: 25
+};
