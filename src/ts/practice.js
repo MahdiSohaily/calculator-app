@@ -66,3 +66,4 @@ function sumup(salary) {
     }
     return Math.max.apply(Math, salaries);
 }
+var operate = function (a, b) { return Math.pow(a, b); };

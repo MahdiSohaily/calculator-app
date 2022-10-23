@@ -98,7 +98,10 @@ function divide({ dividend, divisor }: { dividend: number; divisor: number }) {
 
 divide({ dividend: 10, divisor: 2 });
 
-
-function sumup (salary: number, ...salaries: number[]){
-  return Math.max(...salaries)
+function sumup(salary: number, ...salaries: number[]) {
+  return Math.max(...salaries);
 }
+
+type pow = (a: number, b: number) => number;
+
+const operate: pow = (a: number, b: number) => a ** b;
