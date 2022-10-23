@@ -13,3 +13,5 @@ const profile: {
     isMarried: false,
     socialMedia: ['Facebook', 'LinkedIn', 'Twitter'],
 };
+const obj = { name: 'mahdi', age: 25 };
+obj.name = 'Jafar';
