@@ -91,3 +91,7 @@ function pow2(a: number, b: number, c: string = 'solved'): string {
   if (c) return a ** b + c;
   else return a ** b + 'undefined';
 }
+
+function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
+  return dividend / divisor;
+}

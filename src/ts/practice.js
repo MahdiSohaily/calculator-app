@@ -54,3 +54,7 @@ function pow2(a, b, c) {
     else
         return Math.pow(a, b) + 'undefined';
 }
+function divide(_a) {
+    var dividend = _a.dividend, divisor = _a.divisor;
+    return dividend / divisor;
+}
