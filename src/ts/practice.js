@@ -1,9 +1,13 @@
 var userName = 'mahdi';
 var age = 25;
 var isMarried = false;
-var socialMedia = ['facebook', 'LinkedIn', 'Twitter'];
+var socialMedia = [
+    'facebook',
+    2014,
+    1000,
+];
 var profile = {
-    name: "Mahdi",
+    name: 'Mahdi',
     age: 25,
     isMarried: false,
     socialMedia: ['Facebook', 'LinkedIn', 'Twitter']
