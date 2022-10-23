@@ -19,3 +19,12 @@ const profile: {
 };
 const obj = { name: 'mahdi', age: 25 };
 obj.name = 'Jafar';
+
+// TYPESCRIPT ENUM'S
+
+enum Directions {
+    North = 'north',
+    South = 'south',
+    East = 'east',
+    West = 'west'
+}

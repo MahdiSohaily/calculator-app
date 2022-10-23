@@ -14,3 +14,11 @@ var profile = {
 };
 var obj = { name: 'mahdi', age: 25 };
 obj.name = 'Jafar';
+// TYPESCRIPT ENUM'S
+var Directions;
+(function (Directions) {
+    Directions["North"] = "north";
+    Directions["South"] = "south";
+    Directions["East"] = "east";
+    Directions["West"] = "west";
+})(Directions || (Directions = {}));
