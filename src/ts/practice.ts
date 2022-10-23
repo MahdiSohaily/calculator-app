@@ -87,9 +87,7 @@ function pow(a: number, b: number): number {
   return a ** b;
 }
 
-function pow2(a: number, b: number, c?: string): string {
-  if(c)
-  return a ** b + c;
-  else
-  return a**b + 'undefined';
+function pow2(a: number, b: number, c: string = 'solved'): string {
+  if (c) return a ** b + c;
+  else return a ** b + 'undefined';
 }

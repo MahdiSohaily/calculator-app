@@ -48,6 +48,7 @@ function pow(a, b) {
     return Math.pow(a, b);
 }
 function pow2(a, b, c) {
+    if (c === void 0) { c = 'solved'; }
     if (c)
         return Math.pow(a, b) + c;
     else
