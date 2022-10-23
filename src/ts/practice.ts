@@ -43,8 +43,8 @@ const UID2: stringOrNum = 125;
 
 const student: person = {
   name: 'Mahdi',
-  age: 25
-}
+  age: 25,
+};
 
 // Interfaces
 /**
@@ -53,3 +53,13 @@ const student: person = {
  * Interfaces allow us to define a specific type of format for classes that extend them
  * or a specific type for objects of the same type
  */
+
+interface Rectangle {
+  height: number;
+  width: number;
+}
+
+const rectangle: Rectangle = {
+  height: 20,
+  width: 10,
+};
