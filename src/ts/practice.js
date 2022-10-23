@@ -47,3 +47,9 @@ greeting = function () { };
 function pow(a, b) {
     return Math.pow(a, b);
 }
+function pow2(a, b, c) {
+    if (c)
+        return Math.pow(a, b) + c;
+    else
+        return Math.pow(a, b) + 'undefined';
+}
