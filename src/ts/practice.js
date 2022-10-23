@@ -32,3 +32,8 @@ var rectangle = {
     height: 20,
     width: 10
 };
+var colored = {
+    height: 20,
+    width: 10,
+    color: 'yellow'
+};

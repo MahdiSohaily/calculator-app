@@ -59,7 +59,17 @@ interface Rectangle {
   width: number;
 }
 
+interface coloredRectangle extends Rectangle {
+  color : string,
+}
+
 const rectangle: Rectangle = {
   height: 20,
   width: 10,
 };
+
+const colored : coloredRectangle = {
+  height: 20,
+  width: 10,
+  color: 'yellow'
+}
