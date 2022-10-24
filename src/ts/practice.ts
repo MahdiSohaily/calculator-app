@@ -117,15 +117,18 @@ const operate: pow = (a: number, b: number) => a ** b;
  * access modifiers to the class property and methods
  */
 
-class Person {
+class Person implements Rectangle {
   constructor(
     private name: string,
     readonly lastName: string,
-    public age: number
+    public age: number,
+    public height: number,
+    public width: number
   ) {}
+
   getName(): string {
     return this.name;
   }
 }
 
-const user = new Person('Mahdi', 'Rezaei', 25);
+const user = new Person('Mahdi', 'Rezaei', 25, 10, 10);
