@@ -241,6 +241,10 @@ main {
   grid-area: del;
 }
 
+.del span {
+  font-size: 24px;
+}
+
 .four {
   grid-area: four;
 }
