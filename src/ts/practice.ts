@@ -116,19 +116,27 @@ const operate: pow = (a: number, b: number) => a ** b;
  * here at typescript we can easily specify types and
  * access modifiers to the class property and methods
  */
+class outFits {
+  glasses: boolean;
+  shoes: boolean;
 
-class Person implements Rectangle {
+  constructor(g: boolean, s: boolean) {
+    this.glasses = g;
+    this.shoes = s;
+  }
+}
+class Person extends outFits {
   constructor(
     private name: string,
     readonly lastName: string,
-    public age: number,
-    public height: number,
-    public width: number
-  ) {}
+    public age: number
+  ) {
+    super(true, true);
+  }
 
   getName(): string {
     return this.name;
   }
 }
 
-const user = new Person('Mahdi', 'Rezaei', 25, 10, 10);
+const user = new Person('Mahdi', 'Rezaei', 25);
