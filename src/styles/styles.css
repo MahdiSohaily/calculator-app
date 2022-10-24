@@ -178,18 +178,24 @@ main {
 
 .track-rail {
   border-radius: 100vmax;
+  position: relative;
+  height: 25px;
 }
 
 .track {
   width: 17px;
+  left: 3px;
   height: 17px;
   border-radius: 50%;
+  position: absolute;
+  transition: all 1s ease-in;
 }
 
 .theme-state {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 3px;
 }
 
 /* Screen section styles */

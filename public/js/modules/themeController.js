@@ -5,6 +5,7 @@ track.addEventListener('click', (e) => {
     const position = elem.getAttribute('data-position');
     switch (position) {
         case '1': {
+            elem.style.right = '0px';
             break;
         }
         case '2': {

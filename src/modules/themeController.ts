@@ -6,6 +6,7 @@ track.addEventListener('click', (e: Event) => {
 
   switch (position) {
     case '1': {
+        elem.style.right = '0px'
         break;
     }
     case '2': {
