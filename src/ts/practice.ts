@@ -118,15 +118,11 @@ const operate: pow = (a: number, b: number) => a ** b;
  */
 
 class Person {
-  private name: string;
-  readonly lastName: string;
-  public age: number;
-
-  constructor(n: string, l: string, a: number) {
-    this.name = n;
-    this.lastName = l;
-    this.age = a;
-  }
+  constructor(
+    private name: string,
+    readonly lastName: string,
+    public age: number
+    ) {}
 }
 
 const user = new Person('Mahdi', 'Rezaei', 25);
