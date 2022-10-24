@@ -293,6 +293,10 @@ main {
   grid-area: reset;
 }
 
+.reset span {
+  font-size: 24px;
+}
+
 .equal {
   grid-area: equal;
 }
@@ -306,6 +310,7 @@ main {
 
 .key:hover {
   cursor: pointer;
+  opacity: 0.9;
 }
 
 .key-text {
