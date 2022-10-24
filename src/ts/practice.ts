@@ -140,3 +140,6 @@ class Person extends outFits {
 }
 
 const user = new Person('Mahdi', 'Rezaei', 25);
+
+
+// Typescript Generics
