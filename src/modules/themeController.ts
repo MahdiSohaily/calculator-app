@@ -3,10 +3,10 @@ const track = document.querySelector('.track') as HTMLDivElement;
 track.addEventListener('click', (e: Event) => {
   const elem = e.target as HTMLDivElement;
   const theme: string = elem.getAttribute('data-display')!;
-  reposition(elem, theme);
+  switchTheme(elem, theme);
 });
 
-const reposition = (elem: HTMLDivElement, theme: string): void => {
+const switchTheme = (elem: HTMLDivElement, theme: string): void => {
   switch (theme) {
     case 'dark': {
       elem.style.left = '27px';
