@@ -1,1 +1,2 @@
-import { track } from './modules/themeController.js'
+import './modules/themeController.js';
+ 
