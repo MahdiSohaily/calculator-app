@@ -75,10 +75,11 @@ var operate = function (a, b) { return Math.pow(a, b); };
  * access modifiers to the class property and methods
  */
 var Person = /** @class */ (function () {
-    function Person(n, l) {
+    function Person(n, l, a) {
         this.name = n;
         this.lastName = l;
+        this.age = a;
     }
     return Person;
 }());
-var user = new Person('Mahdi', 'Rezaei');
+var user = new Person('Mahdi', 'Rezaei', 25);
