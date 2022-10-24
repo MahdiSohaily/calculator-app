@@ -74,3 +74,10 @@ var operate = function (a, b) { return Math.pow(a, b); };
  * here at typescript we can easily specify types and
  * access modifiers to the class property and methods
  */
+var Person = /** @class */ (function () {
+    function Person(n, l) {
+        this.name = n;
+        this.lastName = l;
+    }
+    return Person;
+}());
