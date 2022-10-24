@@ -3,7 +3,9 @@ const track = document.querySelector('.track') as HTMLDivElement;
 track.addEventListener('click', (e: Event) => {
   const elem = e.target as HTMLDivElement;
   const position: string = elem.getAttribute('data-position')!;
+});
 
+const reposition = (elem: HTMLDivElement, position: string): void => {
   switch (position) {
     case '1': {
       elem.style.left = '27px';
@@ -24,4 +26,4 @@ track.addEventListener('click', (e: Event) => {
       elem.style.left = '3px';
       elem.setAttribute('data-position', '1');
   }
-});
+};

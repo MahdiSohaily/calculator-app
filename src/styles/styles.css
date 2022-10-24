@@ -191,6 +191,10 @@ main {
   transition: all 0.3s ease-in;
 }
 
+.track:hover {
+  cursor: pointer;
+}
+
 .theme-state {
   display: flex;
   justify-content: space-between;
