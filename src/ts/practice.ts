@@ -6,6 +6,7 @@ const socialMedia: [name: string, start: number, follower: number] = [
   2014,
   1000,
 ];
+
 const profile: {
   name: string;
   age: number;
@@ -107,3 +108,13 @@ function sumup(salary: number, ...salaries: number[]) {
 type pow = (a: number, b: number) => number;
 
 const operate: pow = (a: number, b: number) => a ** b;
+
+
+// Classes in Typescript
+/**
+ * classes in typescript are similar to the classes in 
+ * Javascript.
+ * here at typescript we can easily specify types and 
+ * access modifiers to the class property and methods
+ */
+

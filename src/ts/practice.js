@@ -67,3 +67,10 @@ function sumup(salary) {
     return Math.max.apply(Math, salaries);
 }
 var operate = function (a, b) { return Math.pow(a, b); };
+// Classes in Typescript
+/**
+ * classes in typescript are similar to the classes in
+ * Javascript.
+ * here at typescript we can easily specify types and
+ * access modifiers to the class property and methods
+ */
