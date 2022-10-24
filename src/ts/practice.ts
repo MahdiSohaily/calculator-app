@@ -127,4 +127,4 @@ class Person {
   }
 }
 
-
+const user = new Person('Mahdi', 'Rezaei');

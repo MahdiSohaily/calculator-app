@@ -81,3 +81,4 @@ var Person = /** @class */ (function () {
     }
     return Person;
 }());
+var user = new Person('Mahdi', 'Rezaei');
