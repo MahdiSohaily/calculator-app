@@ -122,7 +122,10 @@ class Person {
     private name: string,
     readonly lastName: string,
     public age: number
-    ) {}
+  ) {}
+  getName(): string {
+    return this.name;
+  }
 }
 
 const user = new Person('Mahdi', 'Rezaei', 25);
