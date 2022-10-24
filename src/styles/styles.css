@@ -188,7 +188,7 @@ main {
   height: 17px;
   border-radius: 50%;
   position: absolute;
-  transition: all 1s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .theme-state {

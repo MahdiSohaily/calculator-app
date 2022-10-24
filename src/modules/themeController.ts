@@ -6,15 +6,22 @@ track.addEventListener('click', (e: Event) => {
 
   switch (position) {
     case '1': {
-        elem.style.right = '0px'
-        break;
+      elem.style.left = '27px';
+      elem.setAttribute('data-position', '2');
+      break;
     }
     case '2': {
-        break;
+      elem.style.left = '51px';
+      elem.setAttribute('data-position', '3');
+      break;
     }
     case '3': {
-      break;  
+      elem.style.left = '3px';
+      elem.setAttribute('data-position', '1');
+      break;
     }
-    default :
+    default:
+      elem.style.left = '3px';
+      elem.setAttribute('data-position', '1');
   }
 });
