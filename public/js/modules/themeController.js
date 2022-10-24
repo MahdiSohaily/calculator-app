@@ -3,6 +3,7 @@ const track = document.querySelector('.track');
 track.addEventListener('click', (e) => {
     const elem = e.target;
     const position = elem.getAttribute('data-position');
+    reposition(elem, position);
 });
 const reposition = (elem, position) => {
     switch (position) {

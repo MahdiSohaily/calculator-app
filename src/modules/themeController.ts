@@ -3,6 +3,7 @@ const track = document.querySelector('.track') as HTMLDivElement;
 track.addEventListener('click', (e: Event) => {
   const elem = e.target as HTMLDivElement;
   const position: string = elem.getAttribute('data-position')!;
+  reposition(elem, position);
 });
 
 const reposition = (elem: HTMLDivElement, position: string): void => {
