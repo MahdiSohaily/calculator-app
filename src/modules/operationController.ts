@@ -1,7 +1,8 @@
-const keys = document.querySelectorAll('.key') as NodeList;
+const keys = document.querySelectorAll('.key-text') as NodeList;
 
 keys.forEach((key) => {
   key.addEventListener('click', (e) => {
-    console.log(key) 
+
+    console.log(e.target) 
   });
 });

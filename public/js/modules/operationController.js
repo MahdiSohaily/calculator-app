@@ -1,7 +1,7 @@
 "use strict";
-const keys = document.querySelectorAll('.key');
+const keys = document.querySelectorAll('.key-text');
 keys.forEach((key) => {
     key.addEventListener('click', (e) => {
-        console.log(key);
+        console.log(e.target);
     });
 });
