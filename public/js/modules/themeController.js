@@ -1,13 +1,13 @@
 "use strict";
 // DOM Reference to the theme changer element
 const trackRail = document.querySelector('.track-rail');
+const track = trackRail.firstElementChild;
 /**
  * Event Listener attached to the div element
  * by the .track class to listen for click event
  * in order to change displaying theme
  */
 trackRail.addEventListener('click', (e) => {
-    const track = trackRail.firstElementChild;
     const theme = track.getAttribute('data-display');
     switchTheme(track, theme);
 });
@@ -18,28 +18,28 @@ trackRail.addEventListener('click', (e) => {
  * check for the current theme and change
  * the theme to the next theme predefined
  */
-const switchTheme = (elem, theme) => {
+const switchTheme = (elem, theme = 'dark') => {
     const root = document.querySelector(':root');
     switch (theme) {
         case 'dark': {
             elem.style.left = '27px';
             elem.setAttribute('data-display', 'light');
             root.setAttribute('data-color-scheme', 'light');
-            updateLocalStorage('light');
+            updateLocalStorage('dark');
             break;
         }
         case 'light': {
             elem.style.left = '51px';
             changeAttribute(elem, 'data-display', 'purple');
             changeAttribute(root, 'data-color-scheme', 'purple');
-            updateLocalStorage('purple');
+            updateLocalStorage('light');
             break;
         }
         case 'purple': {
             elem.style.left = '3px';
             changeAttribute(elem, 'data-display', 'dark');
             changeAttribute(root, 'data-color-scheme', 'dark');
-            updateLocalStorage('dark');
+            updateLocalStorage('purple');
             break;
         }
         default:
@@ -68,3 +68,9 @@ function updateLocalStorage(theme) {
 function changeAttribute(elem, attr, value) {
     elem.setAttribute(attr, value);
 }
+window.addEventListener('load', () => {
+    const theme = localStorage.getItem('calcTheme')
+        ? localStorage.getItem('calcTheme')
+        : 'dark';
+    switchTheme(track, theme);
+});
