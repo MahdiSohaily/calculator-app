@@ -25,24 +25,28 @@ const switchTheme = (elem, theme) => {
             elem.style.left = '27px';
             elem.setAttribute('data-display', 'light');
             root.setAttribute('data-color-scheme', 'light');
+            updateLocalStorage('light');
             break;
         }
         case 'light': {
             elem.style.left = '51px';
             changeAttribute(elem, 'data-display', 'purple');
             changeAttribute(root, 'data-color-scheme', 'purple');
+            updateLocalStorage('purple');
             break;
         }
         case 'purple': {
             elem.style.left = '3px';
             changeAttribute(elem, 'data-display', 'dark');
             changeAttribute(root, 'data-color-scheme', 'dark');
+            updateLocalStorage('dark');
             break;
         }
         default:
             elem.style.left = '3px';
             changeAttribute(elem, 'data-display', 'dark');
             changeAttribute(root, 'data-color-scheme', 'dark');
+            updateLocalStorage('dark');
     }
 };
 /**
