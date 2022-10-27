@@ -182,6 +182,10 @@ main {
   height: 25px;
 }
 
+.track-rail:hover {
+ cursor: pointer;
+}
+
 .track {
   width: 17px;
   left: 3px;
