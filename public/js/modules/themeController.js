@@ -1,16 +1,15 @@
 "use strict";
 // DOM Reference to the theme changer element
 const trackRail = document.querySelector('.track-rail');
-const track = trackRail.firstElementChild;
 /**
  * Event Listener attached to the div element
  * by the .track class to listen for click event
  * in order to change displaying theme
  */
-track.addEventListener('click', (e) => {
-    const elem = e.target;
-    const theme = elem.getAttribute('data-display');
-    switchTheme(elem, theme);
+trackRail.addEventListener('click', (e) => {
+    const track = trackRail.firstElementChild;
+    const theme = track.getAttribute('data-display');
+    switchTheme(track, theme);
 });
 /**
  * Function receives following parameters

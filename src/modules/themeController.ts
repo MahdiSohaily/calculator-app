@@ -1,22 +1,21 @@
 // DOM Reference to the theme changer element
 const trackRail = document.querySelector('.track-rail') as HTMLDivElement;
-const track = trackRail.firstElementChild as HTMLDivElement;
 
 /**
  * Event Listener attached to the div element
  * by the .track class to listen for click event
  * in order to change displaying theme
  */
-track.addEventListener('click', (e: Event) => {
-  const elem = e.target as HTMLDivElement;
-  const theme: string = elem.getAttribute('data-display')!;
-  switchTheme(elem, theme);
+trackRail.addEventListener('click', (e: Event) => {
+  const track = trackRail.firstElementChild as HTMLDivElement;
+  const theme: string = track.getAttribute('data-display')!;
+  switchTheme(track, theme);
 });
 
 /**
  * Function receives following parameters
- * @param elem 
- * @param theme 
+ * @param elem
+ * @param theme
  * check for the current theme and change
  * the theme to the next theme predefined
  */
@@ -59,10 +58,10 @@ function updateLocalStorage(theme: string): void {
 
 /**
  * This function receive three following parameters
- * @param elem 
- * @param attr 
- * @param value 
- * then change specified element's attribute with 
+ * @param elem
+ * @param attr
+ * @param value
+ * then change specified element's attribute with
  * provided value for attribute.
  */
 function changeAttribute(elem: HTMLElement, attr: string, value: string): void {
