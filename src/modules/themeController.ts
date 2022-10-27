@@ -1,5 +1,6 @@
 // DOM Reference to the theme changer element
-const track = document.querySelector('.track') as HTMLDivElement;
+const trackRail = document.querySelector('.track-rail') as HTMLDivElement;
+const track = trackRail.firstElementChild as HTMLDivElement;
 
 /**
  * Event Listener attached to the div element

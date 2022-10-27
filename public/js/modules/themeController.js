@@ -1,6 +1,7 @@
 "use strict";
 // DOM Reference to the theme changer element
-const track = document.querySelector('.track');
+const trackRail = document.querySelector('.track-rail');
+const track = trackRail.firstElementChild;
 /**
  * Event Listener attached to the div element
  * by the .track class to listen for click event
