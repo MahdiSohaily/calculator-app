@@ -7,6 +7,10 @@ function isNumber(item) {
   return !!item.match(/[0-9.]+/);
 }
 
+function notFractional(value) {
+  return value.includes(".");
+}
+
 const keys = document.querySelectorAll(".key-text");
 const screen = document.getElementById("result");
 screen.innerText = num1 ? num1 : 0;
@@ -16,11 +20,13 @@ keys.forEach((key) => {
     const value = e.target.innerText;
     if (isNumber(value)) {
       if (null === operation) {
-        num1 !== null ? (num1 += value) : (num1 = value);
-        console.log(Number(num1));
+        if (value !== "." || (value === "." && !notFractional(num1))) {
+          num1 !== null ? (num1 += value) : (num1 = value);
+        }
       } else {
-        num2 !== null ? (num2 += value) : (num2 = value);
-        console.log(num2);
+        if (value !== "." || (value === "." && !notFractional(num2))) {
+          num2 !== null ? (num2 += value) : (num2 = value);
+        }
       }
     } else {
       operation = value;
