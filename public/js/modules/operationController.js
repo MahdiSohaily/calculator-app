@@ -71,6 +71,12 @@ keys.forEach((key) => {
             }
             break;
           }
+          case "RESET":
+          case "DEL": {
+            num1 = null;
+            cleanup();
+            break;
+          }
         }
       }
     } else {
