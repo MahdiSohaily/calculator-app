@@ -36,8 +36,6 @@ keys.forEach((key) => {
         if (value !== "." || (value === "." && !notFractional(num2))) {
           num2 !== null && num2 !== 0 ? (num2 += value) : (num2 = value);
         }
-
-        console.log(num2);
         switch (operation) {
           case "+": {
             const result = Number(num1) + Number(num2);
