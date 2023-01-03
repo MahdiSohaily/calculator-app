@@ -1,4 +1,3 @@
-"use strict";
 const keys = document.querySelectorAll(".key-text");
 const screen = document.getElementById("result");
 
@@ -15,10 +14,10 @@ function notFractional(value) {
 }
 
 function showResult(input = 0) {
-    screen.innerText = input;
-  }
-  
-  showResult();
+  screen.innerText = input;
+}
+
+showResult();
 
 keys.forEach((key) => {
   key.addEventListener("click", (e) => {
@@ -28,12 +27,20 @@ keys.forEach((key) => {
         if (value !== "." || (value === "." && !notFractional(num1))) {
           num1 !== null && num1 !== 0 ? (num1 += value) : (num1 = value);
         }
-        console.log(num1);
+        showResult(num1);
       } else {
         if (value !== "." || (value === "." && !notFractional(num2))) {
           num2 !== null && num2 !== 0 ? (num2 += value) : (num2 = value);
         }
-        console.log(num2);
+        switch (operation) {
+          case "+": {
+            const result = Number(num1) + Number(value);
+            num1 = result;
+            showResult(result);
+            break;
+          }
+          
+        }
       }
     } else {
       operation = value;
