@@ -52,9 +52,13 @@ keys.forEach((key) => {
             break;
           }
           case "/": {
-            const result = Number(num1) / Number(value);
-            num1 = result;
-            showResult(result);
+            try {
+              const result = Number(num1) / Number(value);
+              num1 = result;
+              showResult(result);
+            } catch (error) {
+              showResult("con't divide my 0.");
+            }
             break;
           }
         }
