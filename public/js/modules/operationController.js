@@ -45,7 +45,12 @@ keys.forEach((key) => {
             showResult(result);
             break;
           }
-          
+          case "*": {
+            const result = Number(num1) * Number(value);
+            num1 = result;
+            showResult(result);
+            break;
+          }
         }
       }
     } else {
