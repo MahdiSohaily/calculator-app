@@ -16,6 +16,10 @@ function notFractional(value) {
 function showResult(input = 0) {
   screen.innerText = input;
 }
+function cleanup() {
+  num2 = null;
+  operation = null;
+}
 
 showResult();
 
@@ -32,30 +36,36 @@ keys.forEach((key) => {
         if (value !== "." || (value === "." && !notFractional(num2))) {
           num2 !== null && num2 !== 0 ? (num2 += value) : (num2 = value);
         }
+
+        console.log(num2);
         switch (operation) {
           case "+": {
-            const result = Number(num1) + Number(value);
+            const result = Number(num1) + Number(num2);
             num1 = result;
             showResult(result);
+            cleanup();
             break;
           }
           case "-": {
-            const result = Number(num1) - Number(value);
+            const result = Number(num1) - Number(num2);
             num1 = result;
             showResult(result);
+            cleanup();
             break;
           }
           case "*": {
-            const result = Number(num1) * Number(value);
+            const result = Number(num1) * Number(num2);
             num1 = result;
             showResult(result);
+            cleanup();
             break;
           }
           case "/": {
             try {
-              const result = Number(num1) / Number(value);
+              const result = Number(num1) / Number(num2);
               num1 = result;
               showResult(result);
+              cleanup();
             } catch (error) {
               showResult("con't divide my 0.");
             }
