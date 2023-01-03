@@ -74,6 +74,7 @@ keys.forEach((key) => {
           case "RESET":
           case "DEL": {
             num1 = null;
+            showResult();
             cleanup();
             break;
           }
